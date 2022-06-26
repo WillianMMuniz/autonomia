@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Calculo</title>
+</head>
+<body>
+  <h1>Autonomia automotiva</h1>
+  <P>Se você quer testar a estimativa que seu automovel faz com 1 litro de combustivel</P>
+  <form action="">
+    <input type="number" id="valorAbastecido" data-form-valorAbastecido placeholder="Valor que deseja abastecer" >
+    <input type="number" id="precoCombustivel" data-form-precoCombustivel placeholder="Preço do combustivel" >
+    <input type="number" id="kmPorLitro" data-form-kmPorLitro placeholder="Estimativa (Km a cada 1 litro)" >
+    <input type="button" value="Autonomia" class="btn" data-form-btn onclick="autonomiaAutomotiva()">
+    <input type="button" value="Litros" class="btn" onclick="litros()">
+    <!-- <button onclick="reset()" class="btn">Tentar novamente</button> -->
+  </form>
+  <div class="resultados">
+    <p class="resultado" id="resultado"></p>
+    <p class="litro" id="litro"></p>
+  </div>
+  <footer>Criação de &copyWillian</footer>
+  <script src="./main.js"></script>
+</body>
+</html>
