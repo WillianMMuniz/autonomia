@@ -1,5 +1,18 @@
+@cor: rgb(192, 197, 195);
+@btnCor: #787492;
+@btnHoverCor: #625f79;
+
+.btnHover {
+  background: @btnHoverCor;
+  border-radius: 3%;
+  font-size: 17.5px;
+  transform: scale(1.1, 1.1);
+  transition: 0.2s;
+}
+
+
 body {
-  background-color: rgb(192, 197, 195);
+  background-color: @cor;
   display: flex;
   flex-direction: column;
   font-size: 20px;
@@ -29,7 +42,7 @@ input {
 
 .btn {
 
-  background-color: #787492;
+  background-color: @btnCor;
   border-radius: 2%;
   border: none;
   padding: 15px 32px;
@@ -40,17 +53,11 @@ input {
 }
 
 .btn:hover {
-  background-color: #625f79;
-  border-radius: 3%;
-  font-size: 17.5px;
-  transform: scale(1.1, 1.1);
-  transition: 0.3s;
+  .btnHover()
 }
 
-
-
 footer {
-  background-color: rgb(170, 170, 170);
+  background: @btnHoverCor;
   margin-top: 29.6%;
   padding: 20px 10px 20px 10px;
 }
