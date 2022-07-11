@@ -9,17 +9,18 @@
 </head>
 <body>
   <h1>Autonomia automotiva</h1>
-  <P>Se você quer testar a estimativa que seu automovel faz com 1 litro de combustivel</P>
+  <P>Se você deseja testar a estimativa que seu automovel faz com 1 litro de combustivel</P>
   <form action="">
     <input type="number" id="valorAbastecido" data-form-valorAbastecido placeholder="Valor que deseja abastecer" >
     <input type="number" id="precoCombustivel" data-form-precoCombustivel placeholder="Preço do combustivel" >
     <input type="number" id="kmPorLitro" data-form-kmPorLitro placeholder="Estimativa (Km a cada 1 litro)" >
-    <input type="button" value="Autonomia" class="btn" data-form-btn onclick="autonomiaAutomotiva()">
-    <input type="button" value="Litros" class="btn" onclick="litros()">
+    <input type="button" value="Calcular" class="btn" data-form-btn onclick="autonomiaAutomotiva()">
     <!-- <button onclick="reset()" class="btn">Tentar novamente</button> -->
   </form>
   <div class="resultados">
+    <label>Quilômetros</label><br>
     <p class="resultado" id="resultado"></p>
+    <label>Litros</label><br>
     <p class="litro" id="litro"></p>
   </div>
   <footer>Criação de &copyWillian</footer>
